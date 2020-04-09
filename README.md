@@ -25,7 +25,7 @@ As a signed-in user want to be able to edit my destination.
 Ruby on Rails
 
 ### Improvement:
-Create destination_user joint table. One destination can have many users.
+Create destination_user joint table. One destination can have many users.  
 Users can leave review, upload pictures, videos for their destination. And, can share with others
 
 ### Image:
