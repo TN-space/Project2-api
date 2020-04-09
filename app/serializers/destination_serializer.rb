@@ -1,4 +1,4 @@
 class DestinationSerializer < ActiveModel::Serializer
-  attributes :name, :city, :state
-  # belongs_to :user
+  attributes :name, :city, :state, :id
+  belongs_to :user
 end

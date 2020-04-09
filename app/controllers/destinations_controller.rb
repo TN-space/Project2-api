@@ -4,7 +4,7 @@ class DestinationsController < ProtectedController
 
   # GET /destinations
   def index
-    @destinations = Destination.all
+    @destinations = current_user.destinations
 
     render json: @destinations
   end
@@ -37,13 +37,14 @@ class DestinationsController < ProtectedController
   # DELETE /destinations/1
   def destroy
     @destination = current_user.destinations.find(params[:id])
+    @destination.destroy
   end
 
   private
 
   # Use callbacks to share common setup or constraints between actions.
   def set_destination
-    @destination = Destination.find(params[:id])
+    @destination = current_user.destinations.find(params[:id])
   end
 
   # Only allow a trusted parameter "white list" through.
