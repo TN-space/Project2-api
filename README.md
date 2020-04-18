@@ -31,4 +31,4 @@ Users can leave review, upload pictures, videos for their destination. And, can 
 ### Image:
 
 #### Wireframe
-<img src="./public/images/erd.jpg">
+<img src="./lib/images/erd.jpg">
